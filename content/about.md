@@ -7,15 +7,11 @@ description: "CREW83 is a small studio that builds products, not decks. We find 
 
 ## What we do
 
-We create products from solutions. That starts with a problem a business actually has today — not a trend — and ends with a focused product that solves it well and keeps solving it. Along the way we do the discovery, design, build and iteration ourselves, so nothing is lost between the people who understand the problem and the people who ship the answer.
+We create products from solutions. That starts with a problem a business actually has today not a trend and ends with a focused product that solves it well and keeps solving it. Along the way we do the discovery, design, build and iteration ourselves, so nothing is lost between the people who understand the problem and the people who ship the solution.
 
 ## Who we do it for
 
-Businesses with a specific, costly problem and no product team to throw at it: [small and mid-sized UK companies, founders, operations-heavy firms — replace with the audiences you actually want]. Our best clients know what's broken, care about the outcome more than the technology, and want a partner who will stay around after launch.
-
-## How we got here
-
-[Three or four sentences: when Ruchi Crew was formed, what you did before, what led to the CREW83 name, and the moment you decided to build products rather than sell hours — why "solutions to today's problems" became the whole premise.]
+Organisations with a specific, costly problem and no product team to throw at it: SMEs, public and private sector. Our best clients know what's broken, care about the outcome more than the technology, and want a partner who will stay around after launch.
 
 ## How we're different
 
