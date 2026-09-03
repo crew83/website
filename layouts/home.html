@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ with .Params.hero }}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>
+        {{ .lead }}
+        <span class="accent">{{ .accent }}<svg class="stroke" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10 C 80 2, 200 2, 297 8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span>
+        {{ .tail }}
+      </h1>
+      <p class="lede">{{ .text }}</p>
+      <a class="button" href="mailto:{{ site.Params.email }}">{{ .cta }}</a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <span class="disc disc-a"></span>
+      <span class="disc disc-b"></span>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.work }}
+<section class="work" id="work">
+  <div class="wrap">
+    <h2>{{ .title }}</h2>
+    <ol class="work-grid">
+      {{ range $i, $it := .items }}
+      <li>
+        <span class="num">0{{ add $i 1 }}</span>
+        <h3>{{ $it.title }}</h3>
+        <p>{{ $it.text }}</p>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Content }}<section class="prose"><div class="wrap">{{ . }}</div></section>{{ end }}
+{{ end }}

@@ -1,0 +1,16 @@
+baseURL = 'https://crew83.github.io/'
+languageCode = 'en-gb'
+title = 'CREW83'
+disableKinds = ['taxonomy', 'term', 'rss', 'section']
+enableRobotsTXT = true
+
+[params]
+  description = "Ruchi Crew — we are building tomorrow's companies from solutions to today's problems."
+  email = 'hello@crew83.com'
+  legal = 'Ruchi Crew Limited t/a CREW83 | Registered in England & Wales. No: 10740695'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  minifyOutput = true

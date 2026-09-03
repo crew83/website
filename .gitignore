@@ -1,0 +1,15 @@
+# Hugo output
+public/
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+assets/jsconfig.json
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local scratch
+_to_delete/
+Claude outputs/
