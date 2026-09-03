@@ -6,4 +6,23 @@ Website for Ruchi Crew Limited t/a CREW83, built with [Hugo](https://gohugo.io/)
 - `hugo.toml` — site title, contact email and the legal footer line.
 - `layouts/` — templates; `assets/css/main.css` — styles.
 
-Run locally with `hugo server`. Pushing to `main` deploys to GitHub Pages via `.github/workflows/hugo.yaml`.
+Run locally with `hugo server`.
+
+## Deployment
+
+Every push to `main` runs `.github/workflows/hugo.yaml`, which builds the site once and deploys it to two places.
+
+**GitHub Pages** — works out of the box once *Settings → Pages → Source* is set to **GitHub Actions**. Live at https://crew83.github.io/.
+
+**cPanel hosting (Namecheap)** — the built files are uploaded over FTPS into `public_html`, replacing a manual File Manager upload. To switch it on, in the GitHub repo go to *Settings → Secrets and variables → Actions* and add:
+
+| Kind     | Name              | Value                                                        |
+|----------|-------------------|--------------------------------------------------------------|
+| Secret   | `FTP_SERVER`      | FTP host from cPanel → *FTP Accounts* (e.g. `server211.web-hosting.com`) |
+| Secret   | `FTP_USERNAME`    | The FTP account username                                     |
+| Secret   | `FTP_PASSWORD`    | That account's password                                      |
+| Variable | `CPANEL_DEPLOY`   | `true` (set to anything else to pause cPanel deploys)        |
+| Variable | `SITE_URL`        | The public URL of the hosted site, with trailing slash, e.g. `https://crew83.com/` |
+| Variable | `FTP_SERVER_DIR`  | Optional. Defaults to `public_html/`; set if the FTP account's root is already `public_html`, e.g. `./` |
+
+Tip: create a dedicated FTP account in cPanel whose home directory is `public_html` so the deploy key can touch nothing else. The action only uploads changed files and never deletes anything it didn't put there.
