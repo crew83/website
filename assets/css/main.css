@@ -66,17 +66,24 @@ nav { display: flex; gap: 32px; font-weight: 600; font-size: 0.95rem; }
 .num { display: block; color: var(--accent); font-weight: 700; margin-bottom: 12px; }
 .work h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 12px; }
 .work p { color: var(--muted); }
+.card { display: block; }
+.card:hover { color: inherit; }
+.card:hover h3 { color: var(--accent); }
+.more { display: inline-block; margin-top: 16px; font-weight: 600; color: var(--accent); }
 
 /* Generic content (About and other pages) */
 .prose { padding: 80px 0 96px; }
 .prose h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 600; margin-bottom: 24px; }
 .prose h2 { font-size: 1.5rem; font-weight: 600; margin: 56px 0 16px; }
+.prose h2 .num { display: inline-block; margin: 0 12px 0 0; }
+.prose h2[id] { scroll-margin-top: 24px; }
 .prose p { margin: 0 0 1em; }
 .prose .standfirst { font-size: 1.3rem; line-height: 1.5; color: var(--ink); max-width: 30em; }
 .prose a { color: var(--accent); }
 .pairs { margin: 8px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 32px 48px; }
 .pairs dt { color: var(--accent); font-weight: 700; margin-bottom: 6px; }
 .pairs dd { margin: 0; color: var(--muted); }
+.pairs.three { grid-template-columns: 1fr 1fr 1fr; }
 .closing { margin-top: 72px; padding-top: 48px; border-top: 1px solid var(--line); }
 .closing h2 { margin: 0 0 24px; font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
 .closing .button { margin-right: 24px; }
@@ -94,5 +101,5 @@ nav { display: flex; gap: 32px; font-weight: 600; font-size: 0.95rem; }
   .hero-art { display: none; }
   .work-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-top { flex-direction: column; align-items: flex-start; }
-  .pairs { grid-template-columns: 1fr; }
+  .pairs, .pairs.three { grid-template-columns: 1fr; }
 }

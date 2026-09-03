@@ -3,7 +3,7 @@
     <div class="footer-top">
       <a class="brand" href="{{ site.Home.RelPermalink }}">CREW<span>83</span></a>
       <nav class="footer-nav" aria-label="Footer">
-        <a href="{{ site.Home.RelPermalink }}#work">What we do</a>
+        <a href="{{ (site.GetPage "/services").RelPermalink }}">What we do</a>
         <a href="{{ (site.GetPage "/about").RelPermalink }}">About</a>
         <a class="footer-mail" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
       </nav>

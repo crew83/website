@@ -26,9 +26,12 @@
     <ol class="work-grid">
       {{ range $i, $it := .items }}
       <li>
-        <span class="num">0{{ add $i 1 }}</span>
-        <h3>{{ $it.title }}</h3>
-        <p>{{ $it.text }}</p>
+        <a class="card" href="{{ (site.GetPage "/services").RelPermalink }}#{{ $it.title | urlize }}">
+          <span class="num">0{{ add $i 1 }}</span>
+          <h3>{{ $it.title }}</h3>
+          <p>{{ $it.text }}</p>
+          <span class="more">Read more</span>
+        </a>
       </li>
       {{ end }}
     </ol>

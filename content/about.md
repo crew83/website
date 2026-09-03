@@ -32,5 +32,5 @@ Remove this comment block once there is something public to show.
 <div class="closing">
   <h2>Have a problem worth solving?</h2>
   <a class="button" href="mailto:{{< param email >}}">Get in touch</a>
-  <a class="text-link" href="/#work">See what we do</a>
+  <a class="text-link" href="/services/">See what we do</a>
 </div>
