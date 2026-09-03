@@ -1,4 +1,4 @@
-# crew83.github.io
+# crew83/website
 
 Website for Ruchi Crew Limited t/a CREW83 (https://crew83.com), built with [Hugo](https://gohugo.io/) — no theme, no JavaScript, one stylesheet.
 
