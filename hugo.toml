@@ -7,7 +7,7 @@ enableRobotsTXT = true
 [params]
   description = "Ruchi Crew — we build products from the solutions we create for today's business problems."
   email = 'hello@crew83.com'
-  legal = 'Ruchi Crew Limited t/a CREW83 | Registered in England & Wales. No: 10740695'
+  legal = 'Ruchi Crew Ltd t/a CREW83 | Registered in England & Wales. No: 10740695'
 
 [markup.goldmark.renderer]
   unsafe = true
