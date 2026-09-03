@@ -10,7 +10,7 @@ work:
   title: "What we do"
   items:
     - title: "Find the problem"
-      text: "We start with real problems businessess face today and solve them."
+      text: "We start with real problems businesses face today and solve them."
     - title: "Build the solution"
       text: "We design, prototype and ship focused products that solve those problems well."
     - title: "Grow the company"

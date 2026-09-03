@@ -14,11 +14,11 @@ Every push to `main` runs `.github/workflows/hugo.yaml`, which builds the site o
 
 **GitHub Pages** — works out of the box once *Settings → Pages → Source* is set to **GitHub Actions**. Live at https://crew83.github.io/.
 
-**cPanel hosting (Namecheap)** — the built files are uploaded over FTPS into `public_html`, replacing a manual File Manager upload. To switch it on, in the GitHub repo go to *Settings → Secrets and variables → Actions* and add:
+**cPanel hosting** — the built files are uploaded over FTPS into `public_html`, replacing a manual File Manager upload. To switch it on, in the GitHub repo go to *Settings → Secrets and variables → Actions* and add:
 
 | Kind     | Name              | Value                                                        |
 |----------|-------------------|--------------------------------------------------------------|
-| Secret   | `FTP_SERVER`      | FTP host from cPanel → *FTP Accounts* (e.g. `server211.web-hosting.com`) |
+| Secret   | `FTP_SERVER`      | FTP host from cPanel → *FTP Accounts*                        |
 | Secret   | `FTP_USERNAME`    | The FTP account username                                     |
 | Secret   | `FTP_PASSWORD`    | That account's password                                      |
 | Variable | `CPANEL_DEPLOY`   | `true` (set to anything else to pause cPanel deploys)        |
