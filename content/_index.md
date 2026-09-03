@@ -13,6 +13,6 @@ work:
       text: "We start with real problems businesses face today and solve them."
     - title: "Build the solution"
       text: "We design, prototype and ship focused products that solve those problems well."
-    - title: "Grow the company"
+    - title: "Create the product"
       text: "We turn working solutions into durable products built for the long term."
 ---
