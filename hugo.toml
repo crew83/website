@@ -1,11 +1,11 @@
-baseURL = 'https://crew83.github.io/'
+baseURL = 'https://crew83.com'
 languageCode = 'en-gb'
 title = 'CREW83'
 disableKinds = ['taxonomy', 'term', 'rss', 'section']
 enableRobotsTXT = true
 
 [params]
-  description = "Ruchi Crew — we are building tomorrow's companies from solutions to today's problems."
+  description = "Ruchi Crew — we build products from the solutions we create for today's business problems."
   email = 'hello@crew83.com'
   legal = 'Ruchi Crew Limited t/a CREW83 | Registered in England & Wales. No: 10740695'
 
