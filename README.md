@@ -1,6 +1,6 @@
 # crew83/website
 
-Website for Ruchi Crew Limited t/a CREW83 (https://crew83.com), built with [Hugo](https://gohugo.io/) — no theme, no JavaScript, one stylesheet.
+Website for CREW83 (crew83.com), built with [Hugo](https://gohugo.io/) — no theme, no JavaScript, one stylesheet.
 
 ## Pages
 
@@ -36,8 +36,8 @@ Every push to `main` runs `.github/workflows/hugo.yaml`, which builds the site a
 
 | Kind     | Name             | Value                                                                   |
 |----------|------------------|-------------------------------------------------------------------------|
-| Secret   | `FTP_SERVER`     | FTP host from cPanel → *FTP Accounts* (e.g. `server211.web-hosting.com`) |
-| Secret   | `FTP_USERNAME`   | The FTP account username, in the full form cPanel shows (e.g. `deploy@crew83.com`) |
+| Secret   | `FTP_SERVER`     | FTP host from cPanel → *FTP Accounts*                                   |
+| Secret   | `FTP_USERNAME`   | The FTP account username, in the full form cPanel shows                 |
 | Secret   | `FTP_PASSWORD`   | That account's password                                                 |
 | Variable | `FTP_SERVER_DIR` | Optional. Defaults to `public_html/`; use `./` if the FTP account's home is already `public_html` |
 
