@@ -3,7 +3,7 @@ title: "CREW83"
 hero:
   lead: "Creating"
   accent: "Products"
-  tail: "Solutions."
+  tail: "from Solutions."
   text: "We build products from the solutions we create for today's business problems."
   cta: "Get in touch"
 work:
