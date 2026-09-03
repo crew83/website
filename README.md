@@ -1,6 +1,6 @@
-# crew83.github.io
+# crew83.com
 
-Website for Ruchi Crew Limited t/a CREW83, built with [Hugo](https://gohugo.io/) — no theme, no JavaScript, one stylesheet.
+Website for CREW83, built with [Hugo](https://gohugo.io/) — no theme, no JavaScript, one stylesheet.
 
 - `content/_index.md` — all homepage copy (hero, "What we do") lives in the front matter.
 - `hugo.toml` — site title, contact email and the legal footer line.
@@ -12,7 +12,7 @@ Run locally with `hugo server`.
 
 Every push to `main` runs `.github/workflows/hugo.yaml`, which builds the site once and deploys it to two places.
 
-**GitHub Pages** — works out of the box once *Settings → Pages → Source* is set to **GitHub Actions**. Live at https://crew83.github.io/.
+# **GitHub Pages** — works out of the box once *Settings → Pages → Source* is set to **GitHub Actions**. Live at https://crew83.github.io/.
 
 **cPanel hosting** — the built files are uploaded over FTPS into `public_html`, replacing a manual File Manager upload. To switch it on, in the GitHub repo go to *Settings → Secrets and variables → Actions* and add:
 
