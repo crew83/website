@@ -31,7 +31,7 @@ jobs:
       - name: Build for cPanel host
         env:
           HUGO_ENVIRONMENT: production
-        run: hugo --gc --minify --destination public-cpanel --baseURL "${{ vars.SITE_URL || 'https://crew83.github.io/' }}"
+        run: hugo --gc --minify --destination public-cpanel --baseURL "${{ vars.SITE_URL || 'https://crew83.com/' }}"
       - uses: actions/upload-artifact@v4
         with:
           name: site-cpanel

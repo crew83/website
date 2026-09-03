@@ -22,7 +22,7 @@ Every push to `main` runs `.github/workflows/hugo.yaml`, which builds the site o
 | Secret   | `FTP_USERNAME`    | The FTP account username                                     |
 | Secret   | `FTP_PASSWORD`    | That account's password                                      |
 | Variable | `CPANEL_DEPLOY`   | `true` (set to anything else to pause cPanel deploys)        |
-| Variable | `SITE_URL`        | The public URL of the hosted site, with trailing slash, e.g. `https://crew83.com/` |
+| Variable | `SITE_URL`        | Optional. Public URL of the hosted site; defaults to `https://crew83.com/` |
 | Variable | `FTP_SERVER_DIR`  | Optional. Defaults to `public_html/`; set if the FTP account's root is already `public_html`, e.g. `./` |
 
 Tip: create a dedicated FTP account in cPanel whose home directory is `public_html` so the deploy key can touch nothing else. The action only uploads changed files and never deletes anything it didn't put there.
